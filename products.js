@@ -9,7 +9,7 @@ const PRODUCTS = [
     id: "p-001",
     name: "Impuzu nziza",
     price: 12000,
-    description: "Impuzu nziza zigezweho; ibara rikomeye kandi riramba.",
+    description: "Impuzu nziza zigezweho z'abakobwa; ibara rikomeye kandi riramba.",
     category: "Impuzu",
     stock: 24,
     image: "placeholder-product-1.jpg"
