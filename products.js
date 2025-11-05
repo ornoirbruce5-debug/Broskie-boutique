@@ -7,10 +7,10 @@
 const PRODUCTS = [
   {
     id: "p-001",
-    name: "Igitenge cyiza",
+    name: "Impuzu nziza",
     price: 12000,
-    description: "Igitenge cyiza cyo gukoramo amakanzu n'imyambaro; ibara rikomeye kandi riramba.",
-    category: "Imyenda",
+    description: "Impuzu nziza zigezweho; ibara rikomeye kandi riramba.",
+    category: "Impuzu",
     stock: 24,
     image: "placeholder-product-1.jpg"
   },
