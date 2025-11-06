@@ -7,28 +7,28 @@
 const PRODUCTS = [
   {
     id: "p-001",
-    name: "Impuzu nziza",
-    price: 12000,
-    description: "Impuzu nziza zigezweho z'abakobwa; ibara rikomeye kandi riramba.",
-    category: "Impuzu",
+    name: "Air Jordan",
+    price: 145.000,
+    description: "Iyi air Jordan ni 🔥 kuma style yose ⛸️.",
+    category: "Ibirato",
     stock: 24,
     image: "placeholder-product-1.jpg"
   },
   {
     id: "p-002",
-    name: "Agatundu ka Coffee",
-    price: 4500,
-    description: "Ibirungo bya kawa by'umwimerere; gikoze mu buryo bwita ku bidukikije.",
-    category: "Ibinyobwa",
+    name: "Air fox qualité 1👟",
+    price: 180.000,
+    description: "Iyi air fox irarenze😱.",
+    category: "Ibirato",
     stock: 48,
     image: "placeholder-product-2.jpg"
   },
   {
     id: "p-003",
-    name: "Telefoni y'ibanze",
-    price: 45000,
-    description: "Telefoni y'ibanze ifite batterie ihamye, ikwiranye n'abashaka igikoresho cyoroshye gukoresha.",
-    category: "Ibikoresho",
+    name: "Triko",
+    price: 10.000,
+    description: "trickot kurigiciro gito.",
+    category: "Impuzu",
     stock: 8,
     image: "placeholder-product-3.jpg"
   },
