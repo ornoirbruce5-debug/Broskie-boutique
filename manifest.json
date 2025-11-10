@@ -1,21 +1,65 @@
 {
-  "name": "Burundi Digital Marketboard",
-  "short_name": "Marketboard",
-  "start_url": "/?utm_source=web_app_manifest",
+  "name": "Broskie Boutique",
+  "short_name": "Broskie",
+  "description": "Youthful, girly and modern fashion showcase with pastel vibes ✨",
+  "lang": "rw",
+  "start_url": "/index.html",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#071129",
-  "theme_color": "#0f172a",
-  "description": "Isoko rya digitale rigezweho kuri GitHub Pages - ibicuruzwa, WhatsApp support, PWA, na live chat.",
+  "orientation": "portrait",
+  "background_color": "#fff0f6",
+  "theme_color": "#f7c6e0",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    },
+    {
+      "src": "/screenshots/catalogue.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["shopping", "fashion", "youth"],
+  "dir": "auto",
+  "id": "broskie-boutique-pwa",
+  "display_override": ["standalone", "fullscreen", "minimal-ui"]
 }
