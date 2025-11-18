@@ -3,57 +3,57 @@
   "short_name": "Broskie",
   "description": "Youthful, girly and modern fashion showcase with pastel vibes ✨",
   "lang": "rw",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/Broskie-boutique/index.html",
+  "scope": "/Broskie-boutique/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff0f6",
   "theme_color": "#f7c6e0",
   "icons": [
     {
-      "src": "/icons/icon-72.png",
+      "src": "/Broskie-boutique/icons/icon-72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-96.png",
+      "src": "/Broskie-boutique/icons/icon-96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-128.png",
+      "src": "/Broskie-boutique/icons/icon-128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-192.png",
+      "src": "/Broskie-boutique/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-256.png",
+      "src": "/Broskie-boutique/icons/icon-256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-384.png",
+      "src": "/Broskie-boutique/icons/icon-384.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/Broskie-boutique/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "/screenshots/home.png",
+      "src": "/Broskie-boutique/screenshots/home.png",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "/screenshots/catalogue.png",
+      "src": "/Broskie-boutique/screenshots/catalogue.png",
       "sizes": "1080x1920",
       "type": "image/png"
     }
