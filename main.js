@@ -284,25 +284,38 @@ function setupContactFallback() {
   });
 }
 
-/* ======================
-   PWA Service Worker registration
-   ====================== */
-function registerServiceWorker() {
-  if (!('serviceWorker' in navigator)) return;
-  navigator.serviceWorker.register('/service-worker.js')
-    .then(reg => {
-      reg.addEventListener && reg.addEventListener('updatefound', () => {
-        const newWorker = reg.installing;
-        newWorker && newWorker.addEventListener('statechange', () => {
-          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-            // Optional: show update toast
-            console.info('Update available for app shell.');
-          }
-        });
-      });
-    })
-    .catch(err => console.warn('SW reg failed:', err));
+// Service Worker registration
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(reg => console.log("✅ Service Worker yanditswe:", reg.scope))
+      .catch(err => console.error("❌ Service Worker ntikunze:", err));
+  });
 }
+
+// Install Prompt Banner
+let deferredPrompt;
+const installBanner = document.getElementById("installBanner");
+const installBtn = document.getElementById("installBtn");
+
+// Fata event ya beforeinstallprompt
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  if (installBanner) installBanner.classList.remove("hidden");
+});
+
+// Iyo user akanda button
+if (installBtn) {
+  installBtn.addEventListener("click", async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const choiceResult = await deferredPrompt.userChoice;
+    console.log("User choice:", choiceResult.outcome);
+    deferredPrompt = null;
+    if (installBanner) installBanner.classList.add("hidden");
+  });
+       }
 
 /* ======================
    Footer year auto-init
