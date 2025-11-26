@@ -1,65 +1,14 @@
 {
   "name": "Broskie Boutique",
-  "short_name": "Broskie",
-  "description": "Youthful, girly and modern fashion showcase with pastel vibes ✨",
-  "lang": "rw",
-  "start_url": "/Broskie-boutique/index.html",
-  "scope": "/Broskie-boutique/",
+  "short_name": "Boutique",
+  "description": "Landing Page ya Broskie Boutique : serivisi, ibicuruzwa, na PWA support.",
+  "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#fff0f6",
-  "theme_color": "#f7c6e0",
+  "background_color": "#ffd6e7",
+  "theme_color": "#ffd6e7",
   "icons": [
-    {
-      "src": "/Broskie-boutique/icons/icon-72.png",
-      "sizes": "72x72",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-384.png",
-      "sizes": "384x384",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/Broskie-boutique/screenshots/home.png",
-      "sizes": "1080x1920",
-      "type": "image/png"
-    },
-    {
-      "src": "/Broskie-boutique/screenshots/catalogue.png",
-      "sizes": "1080x1920",
-      "type": "image/png"
-    }
-  ],
-  "categories": ["shopping", "fashion", "youth"],
-  "dir": "auto",
-  "id": "broskie-boutique-pwa",
-  "display_override": ["standalone", "fullscreen", "minimal-ui"]
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
 }
