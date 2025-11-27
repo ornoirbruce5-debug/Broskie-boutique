@@ -13,9 +13,9 @@ ProductsAPI.add({
 
 // Kongera sandale
 ProductsAPI.add({
-  name: "ikirato gikomeye",
+  name: "Sandals zikomeye",
   price: 18000,
-  description: "Iyi pair ni yambere mubukomezi.",
+  description: "Iyi pair yizi sandales irakomeye trop👌🏽💪🏾.",
   category: ProductsAPI.CATEGORIES.IBIRATO,
   stock: 20,
   image: "sandale.jpg"
