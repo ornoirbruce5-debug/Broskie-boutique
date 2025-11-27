@@ -210,12 +210,11 @@ function setupSmoothScroll() {
 }
 
 /* ======================
-   Contact fallback (Tawk.to detection + local storage fallback)
+   Contact fallback (Tawk.to detection + mailto autoresponder)
    ====================== */
 function setupContactFallback() {
   const fallback = document.getElementById('offline-contact');
   const form = document.getElementById('contact-form');
-  const savedNote = document.getElementById('contact-saved');
   if (!fallback || !form) return;
 
   let decided = false;
@@ -251,28 +250,24 @@ function setupContactFallback() {
 
   setTimeout(() => { if (!decided) showFallback(); }, CONFIG.TAWK_TIMEOUT_MS + 500);
 
+  // Form submit → mailto
   form.addEventListener('submit', (ev) => {
     ev.preventDefault();
     const fd = new FormData(form);
-    const message = {
-      izina: fd.get('name'),
-      imeli: fd.get('email'),
-      ubutumwa: fd.get('message'),
-      igihe: new Date().toISOString()
-    };
-    const existing = JSON.parse(localStorage.getItem(CONFIG.LOCAL_MSGS_KEY) || '[]');
-    existing.push(message);
-    localStorage.setItem(CONFIG.LOCAL_MSGS_KEY, JSON.stringify(existing));
-    if (savedNote) {
-      savedNote.textContent = '✅ Ubutumwa bwawe bwabitswe neza (offline).';
-      savedNote.classList.remove('hidden');
-      pop(savedNote);
-      setTimeout(() => savedNote.classList.add('hidden'), 3500);
-    }
+
+    const izina = encodeURIComponent(fd.get('name'));
+    const imeli = encodeURIComponent(fd.get('email'));
+    const ubutumwa = encodeURIComponent(fd.get('message'));
+
+    const subject = encodeURIComponent("Ubutumwa bushya kuri Boutique Broskie");
+    const body = `Izina: ${izina}%0AImeli: ${imeli}%0AUbutumwa: ${ubutumwa}`;
+
+    // Redirect to mailto
+    window.location.href = `mailto:info@example.com?subject=${subject}&body=${body}`;
+
     form.reset();
   });
 }
-
 /* ======================
    Service Worker registration
    ====================== */
