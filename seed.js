@@ -3,9 +3,9 @@
 
 // Kongera ikabutura
 ProductsAPI.add({
-  name: "Ikabutura",
+  name: "Pantalon",
   price: 20000,
-  description: "Ikabutura nziza yo kwambara mu biruhuko.",
+  description: "Ipantalo nziza yo kwambara mu minsi mikuru.",
   category: ProductsAPI.CATEGORIES.IMPUZU,
   stock: 12,
   image: "placeholder-product-7.jpg"
@@ -13,9 +13,9 @@ ProductsAPI.add({
 
 // Kongera sandale
 ProductsAPI.add({
-  name: "Sandale Soft",
+  name: "ikirato gikomeye",
   price: 18000,
-  description: "Sandale yorohereye 👡.",
+  description: "Iyi pair ni yambere mubukomezi.",
   category: ProductsAPI.CATEGORIES.IBIRATO,
   stock: 20,
   image: "sandale.jpg"
@@ -25,7 +25,7 @@ ProductsAPI.add({
 ProductsAPI.add({
   name: "T-shirt Pastel",
   price: 12000,
-  description: "T-shirt pastel nziza yo mu biruhuko.",
+  description: "T-shirt pastel nziza yo mu misi mikuru.",
   category: ProductsAPI.CATEGORIES.IMPUZU,
   stock: 35,
   image: "tshirt.jpg"
