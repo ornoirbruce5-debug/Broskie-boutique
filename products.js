@@ -7,18 +7,18 @@
 const PRODUCTS = [
   {
     id: "p-001",
-    name: "Air Jordan",
+    name: "Air fox class",
     price: 145000,
-    description: "Iyi air Jordan ni 🔥 kuma style yose .",
+    description: "Iyi air fox ni 🔥 kuma style yose .",
     category: "Ibirato",
     stock: 24,
     image: "placeholder-product-1.jpg"
   },
   {
     id: "p-002",
-    name: "Air fox qualité 1",
+    name: "shoes 1",
     price: 180000,
-    description: "Iyi air fox irarenze 👌🏽.",
+    description: "Iyi shoes irarenze 👌🏽.",
     category: "Ibirato",
     stock: 48,
     image: "placeholder-product-2.jpg"
