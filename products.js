@@ -67,7 +67,16 @@ const PRODUCTS = [
     category: "Impuzu",
     stock: 20,
     image: "placeholder-product-7.jpg"
-  }
+  },
+   {
+      id: "p-008",
+      name: "Sandals",
+      price: 22000,
+      description: "Sandals zikomeye cane pass par tous.",
+      category: "Ibirato",
+      stock: 10,
+      image: "sandale.jpg"
+     }
 ];
 
 // Export for environments that support modules (optional, safe for browser globals)
