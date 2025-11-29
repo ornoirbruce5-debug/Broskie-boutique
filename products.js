@@ -8,7 +8,7 @@ const PRODUCTS = [
   {
     id: "p-001",
     name: "Air Jordan class",
-    price: 145000,
+    price: 300000,
     description: "Iyi air Jordan ni 🔥 kuma style yose.",
     category: "Ibirato",
     stock: 24,
@@ -17,7 +17,7 @@ const PRODUCTS = [
   {
     id: "p-002",
     name: "shoes 1",
-    price: 180000,
+    price: 380000,
     description: "Iyi shoes irarenze 👌🏽.",
     category: "Ibirato",
     stock: 48,
@@ -26,7 +26,7 @@ const PRODUCTS = [
   {
     id: "p-003",
     name: "Triko",
-    price: 10000,
+    price: 65000,
     description: "Trickot👕 kugiciro gito.",
     category: "Impuzu",
     stock: 8,
@@ -35,7 +35,7 @@ const PRODUCTS = [
   {
     id: "p-004",
     name: "Tricot Jordan ⛹️‍♂️zikomeye",
-    price: 45000,
+    price: 65000,
     description: "Tricot zirahari kugiciro gito zikomeye kandi zitandukanye.",
     category: "Impuzu",
     stock: 31,
@@ -44,7 +44,7 @@ const PRODUCTS = [
   {
     id: "p-005",
     name: "Jeans zidacuya zikomeye cane",
-    price: 10000,
+    price: 80000,
     description: "Impuzu nziza cane, styles zitandukanye zabakobwa.",
     category: "Impuzu",
     stock: 15,
@@ -53,7 +53,7 @@ const PRODUCTS = [
   {
     id: "p-006",
     name: "ibirato vyiza",
-    price: 35000,
+    price: 180000,
     description: "Hari ibirato bitandukanye karibu cane.",
     category: "Ibirato",
     stock: 60,
@@ -62,7 +62,7 @@ const PRODUCTS = [
   {
     id: "p-007",
     name: "Pantalon",
-    price: 25000,
+    price: 85000,
     description: "Pantalon nziza yo kwambara ku kazi no mu biruhuko.",
     category: "Impuzu",
     stock: 20,
@@ -79,16 +79,16 @@ const PRODUCTS = [
      },
    {
       id: "p-009",
-      name: "ibirato vyimanza",
+      name: "JEANS 👖 y'amateka ya jobs za everyday",
       price: 70000,
-      description: "ikirato cimara rubanza gikomeye vrt.",
+      description: "jeans idasanzwe👌🏽👖 vrt.",
       stock: 3,
       image: "placeholder-product-8.jpg"
    },
    {
       id: "p-010",
       name: "ibirato vyimanza",
-      price: 70000,
+      price: 350000,
       description: "ikirato cimara rubanza gikomeye vrt.",
       stock: 3,
       image: "placeholder-product-9.jpg"
@@ -96,7 +96,7 @@ const PRODUCTS = [
    {
       id: "p-011",
       name: "ibirato vyimanza",
-      price: 70000,
+      price: 350000,
       description: "ikirato cimara rubanza gikomeye vrt.",
       stock: 3,
       image: "placeholder-product-10.jpg"
@@ -104,7 +104,7 @@ const PRODUCTS = [
    {
       id: "p-0012",
       name: "ibirato vyimanza",
-      price: 70000,
+      price: 370000,
       description: "ikirato cimara rubanza gikomeye vrt.",
       stock: 3,
       image: "placeholder-product-11.jpg"
