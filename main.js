@@ -137,13 +137,14 @@ function renderTestimonials() {
   });
 }
 
+
 /* ======================
    Jokes spinner
    ====================== */
 function setupJokeSpinner() {
   const btn = document.getElementById('joke-spin');
-  const txt = document.getElementById('joke-text');
-  if (!btn || !txt || !Array.isArray(window.JOKES)) return;
+  const box = document.getElementById('joke-box'); // aho jokes zigaragarira
+  if (!btn || !box || !Array.isArray(window.JOKES)) return;
 
   const all = window.JOKES;
   const key = CONFIG.JOKES_SEEN_KEY;
@@ -152,15 +153,35 @@ function setupJokeSpinner() {
   function pickAndShow() {
     const indexes = all.map((_, i) => i);
     const unseen = indexes.filter(i => !seen.has(i));
-    const choice = unseen.length ? unseen[Math.floor(Math.random() * unseen.length)] : indexes[Math.floor(Math.random() * indexes.length)];
-    txt.textContent = all[choice] || '';
+    const choice = unseen.length
+      ? unseen[Math.floor(Math.random() * unseen.length)]
+      : indexes[Math.floor(Math.random() * indexes.length)];
+
+    const joke = all[choice];
+
+    // Render text + image
+    box.innerHTML = `
+      <p style="font-size:1.2em; margin-bottom:10px;">${joke.text}</p>
+      ${joke.image ? `<img src="${joke.image}" alt="joke image" style="max-width:100%; border-radius:12px; margin-top:10px;">` : ""}
+    `;
+
     seen.add(choice);
     localStorage.setItem(key, JSON.stringify(Array.from(seen)));
-    txt.animate([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 280, easing: 'ease-out' });
+
+    box.animate(
+      [
+        { opacity: 0, transform: 'translateY(6px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ],
+      { duration: 280, easing: 'ease-out' }
+    );
   }
 
   pickAndShow();
-  btn.addEventListener('click', () => { pop(btn); pickAndShow(); });
+  btn.addEventListener('click', () => {
+    pop(btn);
+    pickAndShow();
+  });
 }
 
 /* ======================
