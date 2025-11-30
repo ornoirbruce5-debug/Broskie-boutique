@@ -300,36 +300,59 @@ body {
 .testimonial .muted { margin-bottom: 8px; }
 
 /* =========================
-   Jokes card
+   Jokes section
    ========================= */
+.section.jokes {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
 .jokes .joke-card {
-  background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
-  border: 1px solid rgba(255,255,255,.16);
-  border-radius: var(--radius);
-  padding: 18px;
-  box-shadow: var(--shadow);
+  background: linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.85));
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
   max-width: 720px;
   margin: 0 auto;
 }
 
-/* Joke container */
-#joke-box {
-  font-size: 16px;
-  color: #222; /* kugira ngo text igaragarire kuri background */
+/* Joke text */
+.joke-text {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 /* Joke image */
-#joke-box img {
-  margin-top: 10px;
+.joke-box img {
   max-width: 100%;
   border-radius: 12px;
+  margin-top: 10px;
   display: block;
 }
 
 /* Joke actions */
 .joke-actions {
-  margin-top: 12px;
+  margin-top: 16px;
   text-align: center;
+}
+
+.joke-actions .btn {
+  background: #ff69b4;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.joke-actions .btn:hover {
+  background: #ff85c1;
+  transform: scale(1.05);
 }
 
 /* =========================
