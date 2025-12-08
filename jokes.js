@@ -29,8 +29,8 @@ Ndiyaranja n'ubwo har'aho ntagutwenza ariko mba nifuza ko uzinduka canke wirirwa
   },
   {
     id: "j-002",
-    text: "Umugabo yavuze ati: 'Naguze televiziyo ifite smart.' Mugore ati: 'Yiga iki?' Umugabo ati: 'Yiga tureke turebe.'",
-    image: "jokes/smart-tv.png"
+    text: "Inkuru.'",
+    image: "jokes/joke-2.jpg"
   }
 ];
 
