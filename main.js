@@ -15,7 +15,7 @@
    Konfigurasiyo (ahindura hano imwe)
    ---------------------- */
 const CONFIG = {
-  WHATSAPP_NUMBER: '25771633859',
+  WHATSAPP_NUMBER: '257 67 69 11 24',
   THEME_KEY: 'bdm_theme_v1',
   JOKES_SEEN_KEY: 'bdm_seen_jokes_v1',
   LOCAL_MSGS_KEY: 'bdm_local_messages_v1',
