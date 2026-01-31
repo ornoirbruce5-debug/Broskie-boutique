@@ -116,7 +116,31 @@ const PRODUCTS = [
       description: "first quality( qualité yambere.",
       stock: 3,
       image: "product12.jpg"
-   }
+   },
+     {
+        id: "p-0014",
+        name: "Style za sortie",
+        price: "100000",
+        description: "Izi styles ntizimenyerwa guys😁",
+        stock: 4,
+        image: "product13.jpg"
+     },
+      {
+        id: "p-0015",
+        name: "high style",
+        price: "100000",
+        description: "izi zo sibwabwana🔥🤦😂",
+        stock: 5,
+        image: "product14.jpg"
+      },
+       {
+          id: "p-0016",
+          name: "👖 jeans",
+          price: "50000",
+          description: "jeans zo gusohoka",
+          stock: 5,
+          image: "product15.jpg"
+       }
 ];
 
 // Export for environments that support modules (optional, safe for browser globals)
