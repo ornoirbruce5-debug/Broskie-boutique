@@ -145,7 +145,7 @@ const PRODUCTS = [
       id: "p-0017",
       name: "jeans star🌟",
       price: "100000",
-      description: "les gars muzi jeans nyinshi ariko iyi ni n⁰1",
+      description: "les gars muzi jeans nyinshi ariko iyi ni qualité 1",
       stock: 6,
       image: "product16.jpg"
    },
