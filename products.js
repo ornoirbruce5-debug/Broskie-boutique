@@ -120,7 +120,7 @@ const PRODUCTS = [
      {
         id: "p-0014",
         name: "Style za sortie",
-        price: "100000",
+        price: "200000",
         description: "Izi styles ntizimenyerwa guys😁",
         stock: 4,
         image: "product13.jpg"
